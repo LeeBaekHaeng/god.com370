@@ -14,13 +14,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import egovframework.com.cmm.ComDefaultCodeVO;
 import egovframework.com.cmm.service.CmmnDetailCode;
-import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath*:egovframework/spring/com/**/context-*.xml")
 public class CmmUseDAOTest {
 
-	protected Logger egovLogger = LoggerFactory.getLogger(EgovAbstractServiceImpl.class);
+	protected Logger egovLogger = LoggerFactory.getLogger(getClass());
 
 	@Resource(name = "cmmUseDAO")
 	private CmmUseDAO cmmUseDAO;
